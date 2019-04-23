@@ -1,0 +1,261 @@
+@font-face {
+    font-family: AvenirBlack;
+    src: url("../fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: AvenirBook;
+    src: url("../fonts/AvenirLTStd-Book.otf") format("opentype");
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../material/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../material/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../material/MaterialIcons-Regular.woff) format('woff'),
+    url(../material/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body{
+	padding: 0px;
+	margin:0px;
+	background-color: #f2f2f2;
+	color: #444444;
+	font-family: AvenirBook;	
+}
+.status-title{
+	color: white;
+	font-size: 18px;
+}
+.status{
+	width: 100%;
+	background-color: red;
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 20px;
+}
+.btn-delete{
+	/*width: auto;*/
+	/*padding: 10px 15px;*/
+	border-color: red;
+	background-image: none;
+	background-color: red!important;
+	color: white;
+}
+.side-nav{
+	width: 110px;
+	height: 100%;
+	position: fixed;
+	background-color: white;
+	/*vertical-align: middle;*/
+	padding-top: 5%;
+}
+.brand{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+}
+.brand-logo{
+	width: 50px;
+	height: 50px;
+	padding: 5%;
+	background-color: #fa8231;
+	border-radius: 100%;
+	margin-bottom: 30%;
+}
+.brand-logo img{
+	width: 100%;
+	height: 100%;
+}
+.navbar-item{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+}
+.navbar-item a i{
+	width: 100%;
+	line-height: 35px;
+}
+.nav-active{
+	border-right: 1.2px solid red;
+	color: #fa8231;
+}
+.navbar-item a{
+	color: #9b9b9b;
+}
+.navbar-item a i:hover{
+	color: #fa8231;
+}
+.navbar-link{
+	width: 100%;
+	height: 100%;
+
+}
+.side-content{
+
+}
+
+.container{
+	padding-left: 70px;
+	padding: 50px;
+	padding-right: 0px;
+	margin-right: 70px;
+}
+
+h1{
+	font-family: AvenirBlack;
+}
+h3{
+	font-size: 20px;
+	font-family: AvenirBlack;
+}
+h4{
+	font-size: 16px;
+	line-height: 30px;
+	font-family: AvenirBook;
+	color: #9b9b9b;
+}
+input[type="text"]{
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	font-family: AvenirBook;
+	padding: 5px 20px;
+	width: 100%;
+}
+.category span{
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+}
+.card{
+	width: 100%;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 15px;
+	margin-bottom: 10px; 
+	box-shadow: 0px 0px 13px -2px rgba(68,68,68	,1);
+}
+.sel-cat{
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px; 
+}
+.btn-add{
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	color: white;
+	background-color: #28A352;
+}
+.top-space{
+	margin-top: 30px;
+}
+.bg-circle{
+	width: 45px !important;
+	height: 45px;
+	line-height: 30px;
+	border-radius: 100%;
+	padding:10px 0px; 
+	background-color: #fa823155;
+	color: #fa8231;
+}
+.ket-dsb{
+	font-size: 12px;
+	color: #9b9b9b;
+}
+.btn-primary{
+	background-color: #CC2944;
+}
+.btn-info{
+	background-color: #0095B3;
+}
+.btn-success{
+	background-color: #28A352;
+}
+
+/*Load*/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: limegreen;
+  z-index: 99;
+}
+.loading:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: 6px solid #f2f2f2;
+  border-top: 6px dotted #f2f2f2;
+  border-bottom: 6px dotted #f2f2f2;
+  border-radius: 50%;
+  animation: loading 2s infinite;
+}
+.loading:before {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  content: "Loading...";
+  position: absolute;
+  top: 57%;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
